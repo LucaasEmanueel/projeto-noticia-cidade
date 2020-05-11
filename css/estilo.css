@@ -29,6 +29,10 @@ body{
 	text-indent: -3000px;
 }
 
+p{
+	text-align: justify;
+}
+
 /* Barra de navegação*/
 
 ul{
@@ -94,7 +98,6 @@ body.fotos #navegacao a#fotos{
 	width: 270px;
 	float: left;
 	margin: 0 0 20px 195px;
-	background: blue;
 }
 
 #uma-colunas #primario{
@@ -110,7 +113,6 @@ body.fotos #navegacao a#fotos{
 	width: 270px;
 	float: left;
 	margin: 0 0 20px 15px;
-	background: green;
 }
 
 /* Caixa */
@@ -151,9 +153,32 @@ h2{
 }
 
 /*formatando Formularios*/
+
 label{
 	display: block;
 	cursor: pointer;
+}
+
+img.imagem-principal{
+	border: 3px solid #dfdfdf;
+	width: 98%;
+}
+
+/* Formatando cabeçalhos*/
+h3{
+	text-transform: uppercase;
+	display: inline;
+	font-size: 0.8em;
+	padding: 3px;
+}
+
+.destaque h3{
+ background: #b10333;
+ color: #fff;
+}
+
+.entrevista h3{
+ background: #de003c;
 }
 
 /* Rodape*/
@@ -165,7 +190,7 @@ label{
 input{
 	width: 125px;
 	padding: 5px; 
-	font-size: 0.9em;
+	font-size: 0.9em; 
 	background-color: #fff; 
 }
 
@@ -175,10 +200,12 @@ input.submit{
 	background-color: #b10333;
 	border: 2px solid #870529;
 	padding: 5px;
+	cursor: pointer;
 }
 
 #rodape{
 	width: 750px;
 	margin: 0 auto;
 	color: #fff;
+	text-align: center;
 }
